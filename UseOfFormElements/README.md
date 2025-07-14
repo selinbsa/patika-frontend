@@ -33,12 +33,12 @@ Here's how the layout is structured:
 | (left side) | (right side) |
 +----------------------+----------------------------+
 
-> The image used is named `form.jpg` and should be placed in the same folder as `index.html`.
+> The image used is named `form.jpg` and should be placed in the same folder as `creating_form.html`.
 
 ## 🗂 Folder Structure
 
 project-folder/
-├── index.html
+├── creating_form.html
 ├── form.jpg
 └── README.md
 
