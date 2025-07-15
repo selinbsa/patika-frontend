@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating Guide Website</title>
+</head>
+
+<body style="background-color: #900C3F;">
+    <div style="display: flex; justify-content: space-between; align-items: center;">
+
+        <img src="photos/discoball.png" style="width: 200px; height: auto;">
+
+        <h1 style="color: white; flex-grow: 1; text-align: center;font-size: 80px;"><b>The Party Lab</b></h1>
+
+        <img src="photos/ballons.png" style="width: 200px; height: auto;">
+
+    </div>
+    <p style="text-align: center;color: white; font-size:20px"><i>With you in your best memories!</i></p>
+
+    <!-- Navigasyon Menüsü -->
+    <nav style="text-align: center;border: 3px solid white; padding: 5px; box-sizing: border-box;border-radius: 10px;">
+        <a href="index.html" class="active" style="color: white; padding: 14px 20px; text-decoration: none; display: inline-block;font-size: 20px;">Home</a>
+        <a href="about.html" style="color: white; padding: 14px 20px; text-decoration: none; display: inline-block;font-size: 20px;">About</a>
+        <a href="services.html" style="color: white; padding: 14px 20px; text-decoration: none; display: inline-block;font-size: 20px;">Services</a>
+        <a href="touch.html" style="color: white; padding: 14px 20px; text-decoration: none; display: inline-block;font-size: 20px;">Touch</a>
+    </nav>
+
+    <h2 style="color: white;text-align: center;">Get In Touch With The Party Lab</h2>
+    <hr style="color: white; width: 300px;">
+
+    <p style="color: white;text-align: center;">Please fill out the form below so we can contact you.</p>
+    
+    <form style="max-width: 500px; margin: auto;padding: 20px; border-radius: 10px;">
+        <fieldset style="border-radius: 10px;">
+            <div style="margin-bottom: 15px;">
+                <label for="name" style="color: white;">Name:</label>
+                <input type="text" id="name">
+            </div>
+            <div style="margin-bottom: 15px;">
+                <label for="surname" style="color: white;">Surname:</label>
+                <input type="text" id="surname">
+            </div>
+            <div style="margin-bottom: 15px;">
+                <label for="email" style="color: white;">E-mail:</label>
+                <input type="email" id="email">
+            </div>
+            <div style="margin-bottom: 15px;">
+                <label for="phonenumber" style="color: white;">Phone Number:</label>
+                <input type="phonenumber" id="phonenumber">
+            </div>
+            <div style="margin-bottom: 15px;">
+                <label for="gender" style="color: white;">Gender:</label>
+                <input type="radio" name="gender" value="male" id="male" style="color: white;">
+                <label for="male" style="color: white;">Male</label>
+                <input type="radio" name="gender" value="female" id="female" style="color: white;">
+                <label for="female" style="color: white;">Female</label>
+            </div>
+
+            <div style="margin-bottom: 15px;">
+                <label for="message" style="color: white;">Message:</label>
+                <textarea id="message"></textarea>
+            </div>
+        </fieldset>
+        <div style="margin-top: 20px; text-align: center;">
+            <button type="submit" style="padding: 10px 20px;  border: 3px solid white;; border-radius: 5px;background-color: #900C3F; color: white;">Send</button>
+        </div>
+    </form>
+
+    <h3 style="color: white;text-align: center;">Our Adress:</h3>
+    <hr style="color: white; width: 300px;">
+    <p style="text-align: center;color: white;">1234 Party Avenue, <br> Suite 567,Event City, <br> California, 90210, <br> United States </p>
+
+    <h3 style="color: white;text-align: center;">Our Phone:</h3>
+    <hr style="color: white; width: 300px;">
+    <p style="text-align: center;color: white;">+1 (234) 567-8901</p>
+
+    <h3 style="color: white;text-align: center;">Our E-mail:</h3>
+    <hr style="color: white; width: 300px;">
+    <p style="text-align: center;color: white;"><a href="mailto:thepartylab@example.com" style="color: white;"> thepartylab@example.com</a></p>
+
+    <h3 style="color: white;text-align: center;">Working Schedule:</h3>
+    <hr style="color: white; width: 300px;">
+    <ul style="color: white; text-align: center; list-style-type: disc; padding-left: 0; list-style-position: inside;">
+        <li>Monday - Friday: 9:00 AM - 6:00 PM</li>
+        <li>Saturday: 10:00 AM - 2:00 PM</li>
+        <li>Sunday: Closed</li>
+    </ul>
+
+</p>
