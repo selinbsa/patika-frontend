@@ -3,8 +3,9 @@
 This is a simple and responsive blog site project created using only **HTML and CSS**. It demonstrates the use of basic layout techniques, navigation bar creation, article structuring, and internal page linking.
 
 ## 🖼 Preview
-![Blog Site Preview](blogdesignhomepage/.png)
-![Blog Site Preview](blogdesignpostpage/.png)
+![Blog Site Preview](images/blogdesignhomepage.png)
+
+![Blog Site Preview](images/blogdesignpostpage.png)
 
 
 ## 📁 Project Structure
