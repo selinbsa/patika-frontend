@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+ 
+    <h1 id="title">Survey Form</h1>
+    <p id="description">
+        Hello! Please answer all questions completely.
+    </p>
+
+    <form id="survey-form">
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label class="form-label" for="name">Your Name: </label>
+            <input id="name" class="form-input" type="text" placeholder="e.g. Selin Ağan">
+
+            <label class="form-label" for="email">Your E-mail: </label>
+            <input id="email" class="form-input" type="email" placeholder="example@gmail.com" required>
+
+            <label class="form-label" for="number">Enter Your Age: </label>
+            <input id="number" class="form-input" type="number" placeholder="Enter a number" min="18" max="99" required>
+        </fieldset>
+
+
+        <fieldset>
+            <legend>Gender</legend>
+            <label class="form-label" for="dropdown">Choose your gender</label>
+            <select id="dropdown" class="form-select" required>
+                <option value="" disabled selected>Please choose</option>
+                <option value="female">Female</option>
+                <option value="male">Male</option>
+        </select>
+        </fieldset>
+
+        <fieldset>
+            <legend>Reference Source</legend>
+            <p>Where did you hear us?</p>
+            <label class="form-label">
+                <input class="form-radio" type="radio" name="hearingsource" value="instagram">
+                Instagram
+            </label>
+            <label class="form-label">
+                <input class="form-radio" type="radio" name="hearingsource" value="linkedin">
+                Linkedin
+            </label>
+            <label class="form-label">
+                <input class="form-radio" type="radio" name="hearingsource" value="youtube">
+                Youtube
+            </label>
+            <label class="form-label">
+                <input class="form-radio" type="radio" name="hearingsource" value="other">
+                Other
+            </label>
+
+            <label class="form-label" for="other-text">Please specify if you choose other</label>
+            <textarea id="other-text" class="form-input" placeholder="Your Answer..."></textarea>
+        </fieldset>
+
+        <label class="form-label">
+            <input class="form-checkbox" type="checkbox" name="terms" value="accepted" required>
+            Terms of Service
+        </label>
+
+        <label class="form-label">
+            <input class="form-checkbox" type="checkbox" name="subscribe" value="accepted" required>
+            Subscribe for news
+        </label>
+        
+        <input  type="submit" id="submit" class="form-button" value="Submit">
+
+    </form>
+
+
+</body>
+
+</html>
