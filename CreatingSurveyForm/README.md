@@ -3,7 +3,7 @@
 This project is a **responsive survey form** created using **HTML** and **CSS**. It is built for practice and showcases various form elements along with basic styling techniques to improve user experience.
 
 ## 📸 Preview
-```md
+
 ![Survey Form Screenshot](surveyform.png)
 
 
