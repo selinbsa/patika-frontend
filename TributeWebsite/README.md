@@ -2,13 +2,6 @@
 
 This project is a tribute website dedicated to the legendary mystery writer **Agatha Christie**. It highlights her life, career, notable works, and famous quotes using an engaging and responsive web design.
 
-## 🌐 Live Demo
-
-🔗 [Live Demo](https://selinbsa.github.io/patika-frontend/TributeWebsite/)
-📁 [GitHub Repository](https://github.com/selinbsa/TributeWebsite)
-
----
-
 ## 🖼️ Screenshots
 
 Here are some visuals of the project:
