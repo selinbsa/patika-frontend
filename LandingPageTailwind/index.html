@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Landing Page Tailwind</title>
+  </head>
+  <body class="container mx-auto px-4 py-4 bg-fuchsia-800 font-sans">
+    <!--HEADER STARTS-->
+    <header class="bg-white rounded-md">
+    <nav aria-label="Global" class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8">
+        <div class="flex lg:flex-1">
+        <a href="#" class="-m-1.5 p-1.5">
+            <span class="sr-only">THE PARTY LAB</span>
+            <p class="text-3xl font-bold">THE PARTY LAB</p>
+        </a>
+        </div>
+        <div class="flex lg:hidden">
+        <button type="button" command="show-modal" commandfor="mobile-menu" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">
+            <span class="sr-only">Open main menu</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon" aria-hidden="true" class="size-6">
+            <path d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+        </button>
+        </div>
+        <el-popover-group class="hidden lg:flex lg:gap-x-12">
+        <div class="relative">
+            <button popovertarget="desktop-menu-services" class="flex items-center gap-x-1 text-sm/6 font-semibold text-gray-900">
+            Services
+            <svg viewBox="0 0 20 20" fill="currentColor" data-slot="icon" aria-hidden="true" class="size-5 flex-none text-gray-400">
+                <path d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" fill-rule="evenodd" />
+            </svg>
+            </button>
+
+            <el-popover id="desktop-menu-services" anchor="bottom" popover class="w-screen max-w-md overflow-hidden rounded-3xl bg-white shadow-lg outline-1 outline-gray-900/5 transition transition-discrete [--anchor-gap:--spacing(3)] backdrop:bg-transparent open:block data-closed:translate-y-1 data-closed:opacity-0 data-enter:duration-200 data-enter:ease-out data-leave:duration-150 data-leave:ease-in">
+            <div class="p-4">
+                <div class="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm/6 hover:bg-gray-50">
+                <div class="flex-auto">
+                    <a href="#" class="block font-semibold text-gray-900">
+                    Birthday Party
+                    <span class="absolute inset-0"></span>
+                    </a>
+                    <p class="mt-1 text-gray-600">Have a beautiful and unforgetable birthday in this year</p>
+                </div>
+                </div>
+                <div class="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm/6 hover:bg-gray-50">
+                <div class="flex-auto">
+                    <a href="#" class="block font-semibold text-gray-900">
+                    Wedding Party
+                    <span class="absolute inset-0"></span>
+                    </a>
+                    <p class="mt-1 text-gray-600">Have a beautiful and unforgetable wedding in this year</p>
+                </div>
+                </div>
+                <div class="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm/6 hover:bg-gray-50">
+                <div class="flex-auto">
+                    <a href="#" class="block font-semibold text-gray-900">
+                    Events
+                    <span class="absolute inset-0"></span>
+                    </a>
+                    <p class="mt-1 text-gray-600">Have a beautiful and unforgetable events in this year</p>
+                </div>
+                </div>
+                <div class="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm/6 hover:bg-gray-50">
+                <div class="flex-auto">
+                    <a href="#" class="block font-semibold text-gray-900">
+                    Bachelor Party
+                    <span class="absolute inset-0"></span>
+                    </a>
+                    <p class="mt-1 text-gray-600">Have a beautiful and unforgetable bachelor in this year</p>
+                </div>
+                </div>
+                <div class="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm/6 hover:bg-gray-50">
+                <div class="flex-auto">
+                    <a href="#" class="block font-semibold text-gray-900">
+                    Graduation Party
+                    <span class="absolute inset-0"></span>
+                    </a>
+                    <p class="mt-1 text-gray-600">Have a beautiful and unforgetable graduation in this year</p>
+                </div>
+                </div>
+            </div>
+            <div class="grid grid-cols-2 divide-x divide-gray-900/5 bg-gray-50">
+                <a href="#" class="flex items-center justify-center gap-x-2.5 p-3 text-sm/6 font-semibold text-gray-900 hover:bg-gray-100">
+                Check calendar
+                </a>
+                <a href="#" class="flex items-center justify-center gap-x-2.5 p-3 text-sm/6 font-semibold text-gray-900 hover:bg-gray-100">
+                Contact sales
+                </a>
+            </div>
+            </el-popover>
+        </div>
+
+        <a href="#" class="text-sm/6 font-semibold text-gray-900">About Us</a>
+        <a href="#" class="text-sm/6 font-semibold text-gray-900">Touch</a>
+        </el-popover-group>
+        <div class="hidden lg:flex lg:flex-1 lg:justify-end">
+        <button type="button" onclick="location.href='/login'"class="inline-flex items-center gap-1 rounded-xl bg-fuchsia-800 px-4 py-2 text-sm font-semibold text-white shadow hover:bg-fuchsia-700 focus:outline-none focus:ring-2 focus:ring-fuchsia-500 focus:ring-offset-2">
+        Log in <span aria-hidden="true">&rarr;</span>
+        </button>
+
+        </div>
+    </nav>
+    <el-dialog>
+        <dialog id="mobile-menu" class="backdrop:bg-transparent lg:hidden">
+        <div tabindex="0" class="fixed inset-0 focus:outline-none">
+            <el-dialog-panel class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white p-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+            <div class="flex items-center justify-between">
+                <a href="#" class="-m-1.5 p-1.5">
+                <span class="sr-only">THE PARTY LAB</span>
+                </a>
+                <button type="button" command="close" commandfor="mobile-menu" class="-m-2.5 rounded-md p-2.5 text-gray-700">
+                <span class="sr-only">Close menu</span>
+                </button>
+            </div>
+            <div class="mt-6 flow-root">
+                <div class="-my-6 divide-y divide-gray-500/10">
+                <div class="space-y-2 py-6">
+                    <div class="-mx-3">
+                    <button type="button" command="--toggle" commandfor="services" class="flex w-full items-center justify-between rounded-lg py-2 pr-3.5 pl-3 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">
+                        Services
+                        <svg viewBox="0 0 20 20" fill="currentColor" data-slot="icon" aria-hidden="true" class="size-5 flex-none in-aria-expanded:rotate-180">
+                        <path d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" fill-rule="evenodd" />
+                        </svg>
+                    </button>
+                    <el-disclosure id="services" hidden class="mt-2 block space-y-2">
+                        <a href="#" class="block rounded-lg py-2 pr-3 pl-6 text-sm/7 font-semibold text-gray-900 hover:bg-gray-50">Birthday Party</a>
+                        <a href="#" class="block rounded-lg py-2 pr-3 pl-6 text-sm/7 font-semibold text-gray-900 hover:bg-gray-50">Wedding Party</a>
+                        <a href="#" class="block rounded-lg py-2 pr-3 pl-6 text-sm/7 font-semibold text-gray-900 hover:bg-gray-50">Events</a>
+                        <a href="#" class="block rounded-lg py-2 pr-3 pl-6 text-sm/7 font-semibold text-gray-900 hover:bg-gray-50">Bachelor Party</a>
+                        <a href="#" class="block rounded-lg py-2 pr-3 pl-6 text-sm/7 font-semibold text-gray-900 hover:bg-gray-50">Graduation Party</a>
+                        <a href="#" class="block rounded-lg py-2 pr-3 pl-6 text-sm/7 font-semibold text-gray-900 hover:bg-gray-50">Watch demo</a>
+                        <a href="#" class="block rounded-lg py-2 pr-3 pl-6 text-sm/7 font-semibold text-gray-900 hover:bg-gray-50">Contact sales</a>
+                    </el-disclosure>
+                    </div>
+                    <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">About Us</a>
+                    <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Touch</a>
+                </div>
+                <div class="py-6">
+                <button type="button"
+                    class="-mx-3 block w-full rounded-xl px-3 py-2.5 text-base font-semibold text-white bg-fuchsia-600 hover:bg-fuchsia-700 focus:outline-none focus:ring-2 focus:ring-fuchsia-500">
+                    Log in
+                </button>
+                </div>
+                </div>
+            </div>
+            </el-dialog-panel>
+        </div>
+        </dialog>
+    </el-dialog>
+    </header>
+    <!--HEADER ENDS-->
+
+    <!-- Hero -->
+    <section class="mx-auto max-w-7xl px-4 pt-8">
+        <div class="grid gap-6 md:grid-cols-2">
+        <!-- Left card -->
+        <div class="rounded-2xl bg-white p-8 shadow-sm">
+            <p class="text-sm font-semibold text-fuchsia-800 mb-3">The Party Lab</p>
+            <h1 class="text-4xl font-extrabold leading-tight mb-3">Celebrate with<br/>The Party Lab</h1>
+            <p class="text-gray-600 mb-6">All your special dates are saved with us.</p>
+
+            <form id="signup" class="space-y-3">
+            <input type="text" placeholder="Your name" class="w-full rounded-lg border border-gray-200 px-3 py-2 focus:border-fuchsia-500 focus:outline-none focus:ring-1 focus:ring-fuchsia-500">
+            <input type="email" placeholder="Email address" class="w-full rounded-lg border border-gray-200 px-3 py-2 focus:border-fuchsia-500 focus:outline-none focus:ring-1 focus:ring-fuchsia-500">
+            <button class="w-full rounded-lg bg-fuchsia-600 px-4 py-2.5 font-semibold text-white hover:bg-fuchsia-800">Join the world!</button>
+            </form>
+        </div>
+        <!-- Right image -->
+        <div class="rounded-2xl overflow-hidden shadow-sm">
+            <img class="h-full w-full object-cover"
+                src="images/WeddingCeleb.jpeg"
+                alt="Hero image"/>
+        </div>
+        </div>
+    </section>
+
+    <!-- How it works -->
+    <section class="mx-auto max-w-7xl px-4 py-12">
+        <p class="text-center text-xs tracking-widest font-semibold text-white">HOW IT WORKS</p>
+        <h2 class="mt-2 text-center text-3xl sm:text-4xl font-extrabold text-white">Celebrate with The Party Lab is simple</h2>
+
+        <div class="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <!-- Step -->
+        <div class="rounded-2xl bg-white p-6 shadow-sm">
+            <div class="flex items-center justify-center h-8 w-8 rounded-full bg-fuchsia-800 text-white font-bold">1</div>
+            <h3 class="mt-3 font-extrabold">Fill the form.</h3>
+            <p class="text-gray-600 mt-1">Fill the form with your contact and join our world</p>
+        </div>
+        <div class="rounded-2xl bg-white p-6 shadow-sm">
+            <div class="flex items-center justify-center h-8 w-8 rounded-full bg-fuchsia-800 text-white font-bold">2</div>
+            <h3 class="mt-3 font-extrabold">Analyzing and Planning</h3>
+            <p class="text-gray-600 mt-1">We will analyz what are your expectaions and planning your date</p>
+        </div>
+        <div class="rounded-2xl bg-white p-6 shadow-sm">
+            <div class="flex items-center justify-center h-8 w-8 rounded-full bg-fuchsia-800 text-white font-bold">3</div>
+            <h3 class="mt-3 font-extrabold">Contact.</h3>
+            <p class="text-gray-600 mt-1">We will contact with you and explain best ideas to make your day special</p>
+        </div>
+        </div>
+
+         <!-- Image + Testimonial -->
+        <div class="mt-8 grid gap-6 md:grid-cols-2">
+        <div class="rounded-2xl overflow-hidden shadow-sm">
+            <img class="h-full w-full object-cover"
+                src="images/Thebachelorparty.jpeg"
+                alt="bachelorparty"/>
+        </div>
+        <div class="rounded-2xl bg-white p-8 shadow-sm relative">
+            <blockquote class="mt-4 italic text-gray-700 text-center">
+            “What a amazing night with THE PARTY LAB”
+            </blockquote>
+            <p class="mt-4 text-center text-sm text-gray-500">
+            <span class="font-semibold text-gray-700">Leroy Jenkins</span>
+            </p>
+            <div class="mt-6 flex justify-center gap-2">
+            <span class="h-2 w-2 rounded-full bg-gray-300"></span>
+            <span class="h-2 w-2 rounded-full bg-gray-400"></span>
+            <span class="h-2 w-2 rounded-full bg-gray-300"></span>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- Create with us -->
+    <section class="mx-auto max-w-7xl px-4 pb-6">
+        <div class="rounded-2xl bg-white p-8 shadow-sm">
+        <h2 class="text-3xl font-extrabold">Celebrate with us</h2>
+        <p class="mt-2 max-w-3xl text-gray-600">Make your day special</p>
+
+        <div class="mt-6 grid gap-6 md:grid-cols-2">
+            <div class="rounded-2xl overflow-hidden shadow-sm">
+            <img class="h-full w-full object-cover"
+                src="images/Event.jpeg"
+                alt="event"/>
+            </div>
+            <article class="rounded-2xl bg-white p-6 shadow-sm border">
+            <span class="inline-flex w-fit rounded-full bg-fuchsia-100 px-2 py-1 text-xs font-semibold text-fuchsia-700">Event</span>
+            <h3 class="mt-3 text-2xl font-extrabold">Best Event With Us</h3>
+            <p class="mt-2 text-sm text-gray-500">November 30, 2020<br/>By Leroy Jenkins</p>
+            <p class="mt-4 text-gray-600">Lots of sparkle, fun, dancing and laughter! Don't you wanna be a part of this forgetable nights?</p>
+            </article>
+        </div>
+
+        <!-- Three small feature cards -->
+        <div class="mt-6 grid gap-4 md:grid-cols-3">
+            <div class="rounded-xl bg-white p-4 shadow-sm border">
+            <p class="font-semibold">Beautiful Nights</p>
+            </div>
+            <div class="rounded-xl bg-white p-4 shadow-sm border">
+            <p class="font-semibold">Forgetable Memories</p>
+            </div>
+            <div class="rounded-xl bg-white p-4 shadow-sm border">
+            <p class="font-semibold">Well-planned Details</p>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- Team section -->
+    <section class="mx-auto max-w-7xl px-4 py-10">
+        <div class="rounded-2xl bg-white p-10 shadow-sm">
+        <h2 class="text-center text-3xl sm:text-4xl font-extrabold">Our team is here to help you.</h2>
+        <p class="mt-1 text-center text-sm text-gray-500">Meet our crew &gt;</p>
+        <div class="mt-6">
+        <img
+            class="w-full h-auto rounded-2xl"
+            src="images/team.jpg"
+            alt="Team image"
+        />
+        </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="mx-auto max-w-7xl px-4 pb-10">
+        <div class="rounded-2xl bg-white p-6 shadow-sm flex flex-col sm:flex-row items-center justify-between gap-4">
+        <p class="font-extrabold tracking-tight">The Party Lab</p>
+        <div class="flex items-center gap-4 text-gray-500">
+            <a href="#" aria-label="mail" class="hover:text-fuchsia-700">✉</a>
+            <a href="#" aria-label="twitter" class="hover:text-fuchsia-700">🐦</a>
+            <a href="#" aria-label="github" class="hover:text-fuchsia-700">💻</a>
+        </div>
+        </div>
+    </footer>
+
+    <div class="h-8"></div>
+
+  </body>
+</html>
