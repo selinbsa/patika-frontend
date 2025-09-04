@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Drum Kit</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <h1>Drum Kit</h1>
+    <p>Klavye veya düğmelere tıklayarak sesleri çal.</p>
+  </header>
+
+  <main>
+    <!-- IMG -->
+    <div class="drum-image">
+        <img src="images/drum.png" alt="Davul" />
+    </div>
+
+    <div class="kit" aria-label="Davul seti">
+      <!-- On each button: data-sound = wav file in sounds folder, data-key = keyboard letter -->
+      <button class="pad" data-sound="sounds/kick.wav"  data-key="k" aria-label="Kick (K)">
+        <span class="key">K</span><span class="label">Kick</span>
+      </button>
+
+      <button class="pad" data-sound="sounds/snare.wav" data-key="s" aria-label="Snare (S)">
+        <span class="key">S</span><span class="label">Snare</span>
+      </button>
+
+      <button class="pad" data-sound="sounds/hihat.wav" data-key="h" aria-label="Hi-Hat (H)">
+        <span class="key">H</span><span class="label">Hi-Hat</span>
+      </button>
+
+      <button class="pad" data-sound="sounds/tom.wav"   data-key="t" aria-label="Tom (T)">
+        <span class="key">T</span><span class="label">Tom</span>
+      </button>
+
+      <button class="pad" data-sound="sounds/clap.wav"  data-key="c" aria-label="Clap (C)">
+        <span class="key">C</span><span class="label">Clap</span>
+      </button>
+
+      <button class="pad" data-sound="sounds/ride.wav"  data-key="r" aria-label="Ride (R)">
+        <span class="key">R</span><span class="label">Ride</span>
+      </button>
+    </div>
+  </main>
+
+  <script defer src="js/script.js"></script>
+</body>
+</html>
