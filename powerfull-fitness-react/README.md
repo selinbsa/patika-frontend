@@ -1,16 +1,51 @@
-# React + Vite
+# Powerfull Fitness — React (Vite)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Orijinal HTML/JS şablonun tasarımını **bozmadan**, işlevselliğini **koruyarak** React’e taşınmış sürüm.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 🚀 Gereksinimler
+- **Node.js** 18+ (önerilen 20+)
+- **npm** 9+ (veya pnpm/yarn)
 
-The React Compiler is not enabled on this template. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🧭 Hızlı Başlangıç
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+# 1) Vite tabanlı React projesi oluştur
+npm create vite@latest powerfull-fitness-react -- --template react
+cd powerfull-fitness-react
+
+# 2) Bu projenin dosyalarını içeri kopyala
+# (özellikle src/, public/ ve index.html)
+
+# 3) Kur ve çalıştır
+npm install
+npm run dev
+
+## 📁 Klasör Yapısı
+powerfull-fitness-react/
+├─ index.html
+├─ public/
+│  └─ assets/
+│     ├─ logo.png
+│     ├─ hero-man.jpg
+│     ├─ bmi-index.jpg
+│     ├─ client1.jpg, client2.jpg
+│     ├─ group.webp, solo.jpg, stret.webp, yoga.jpg
+│     ├─ trainer1.jpg, trainer2.jpg, trainer3.jpg
+│     └─ purchase1.jpg ... purchase4.jpg
+└─ src/
+   ├─ App.jsx
+   ├─ styles.css
+   └─ components/
+      ├─ Header.jsx
+      ├─ Hero.jsx
+      ├─ Stats.jsx
+      ├─ Classes.jsx
+      ├─ BmiCalculator.jsx
+      ├─ Trainers.jsx
+      ├─ Reviews.jsx
+      ├─ Contact.jsx
+      └─ Footer.jsx
